@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 #top = 22
 
 # crop background.png image
-im = img.open("output/frame0.png")
+im = img.open("background_benidorm.png")
 im1 = im.crop((80, 22, 540, 480))
-im1.save("test.png")
+im1.save("background.png")
 
 

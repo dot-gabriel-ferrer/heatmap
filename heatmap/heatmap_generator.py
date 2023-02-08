@@ -64,7 +64,7 @@ def alpha_clip(intensity):
 def heatmap_output(name, x_mesh, y_mesh, intensity, alpha_clip):
     fig, ax = plt.subplots()
     # smooth the heatmap
-    ax.imshow(intensity, cmap='gist_heat', interpolation='gaussian', alpha=alpha_clip)
+    ax.imshow(intensity, cmap='jet', interpolation='gaussian', alpha=alpha_clip)
     # set initial coordinates of the heatmap as 0,0 at bottom left
     ax.set_xlim(0, len(x_mesh))
     ax.set_ylim(0, len(y_mesh))
@@ -75,6 +75,8 @@ def heatmap_output(name, x_mesh, y_mesh, intensity, alpha_clip):
     # remove white border
     fig.subplots_adjust(left=0, right=1, bottom=0, top=1)
     fig.savefig(name, transparent = True)
+    # close the figure
+    plt.close(fig)
 
 # function to create heatmap
 def create_heatmap(name, json_file, grid_size=1, h=10):

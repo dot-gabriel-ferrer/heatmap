@@ -19,5 +19,5 @@ with contextlib.ExitStack() as stack:
 
     # https://pillow.readthedocs.io/en/stable/handbook/image-file-formats.html#gif
     img.save(fp=fp_out, format='GIF', append_images=imgs,
-             save_all=True, duration=200, loop=0)
+             save_all=True, duration=20, loop=0, fps=60, quality = 50)
 
