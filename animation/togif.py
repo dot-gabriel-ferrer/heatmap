@@ -13,7 +13,6 @@ from typing import Optional
 
 from PIL import Image
 
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 

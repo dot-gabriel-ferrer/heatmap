@@ -15,8 +15,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from numpy.typing import NDArray
 
-# Configure logging
-logging.basicConfig(level=logging.INFO)
+# Get logger for this module
 logger = logging.getLogger(__name__)
 
 
