@@ -1,5 +1,46 @@
-.ipynb
-.gif
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Jupyter Notebook
 .ipynb_checkpoints
-.output/*
-.png
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Output files
+output/
+*.gif
+*.png
+
+# Keep example files
+!examples/*.png
+!examples/*.json
+
+# Keep demo files for README
+!heatmap_animation.gif
+!heatmap_example.png
+
+# Temporary files
+tmp/
+temp/
+temp_frames/
