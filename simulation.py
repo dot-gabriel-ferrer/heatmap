@@ -37,10 +37,15 @@ def main():
         # Update coordinates
         x, y = update_coordinates(x, y, x_delta, y_delta)
         
-        # Overlay heatmap on background
-        overlay_images("background.png", frame_path, frame_path)
+        # Overlay heatmap on background (if background exists)
+        try:
+            overlay_images("examples/sample_background.png", frame_path, frame_path)
+        except FileNotFoundError:
+            # Skip overlay if background doesn't exist
+            pass
 
 
 if __name__ == "__main__":
     main()
+
 

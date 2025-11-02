@@ -32,6 +32,11 @@ output/
 *.gif
 *.png
 
+# Keep example files
+!examples/*.png
+!examples/*.json
+
 # Temporary files
 tmp/
 temp/
+temp_frames/
