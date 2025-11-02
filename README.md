@@ -2,6 +2,8 @@
 
 A professional Python toolkit for generating heatmaps over geographic maps and point cloud data using Kernel Density Estimation (KDE).
 
+![Heatmap Animation](heatmap_animation.gif)
+
 ## Features
 
 - **Kernel Density Estimation**: Generate smooth heatmaps using quartic kernel
@@ -10,6 +12,18 @@ A professional Python toolkit for generating heatmaps over geographic maps and p
 - **CLI Interface**: Easy-to-use command-line interface for all operations
 - **Flexible Input**: Support for JSON coordinate files and NumPy arrays
 - **Customizable**: Configurable grid size, bandwidth, color maps, and interpolation methods
+
+## Visualization Examples
+
+### Static Heatmap
+![Heatmap Example](heatmap_example.png)
+
+*Example of heatmap visualization with clustered point cloud data using the viridis colormap*
+
+### Animated Heatmap
+![Heatmap Animation](heatmap_animation.gif)
+
+*Real-time visualization of moving point cloud data with smooth heatmap transitions*
 
 ## Installation
 

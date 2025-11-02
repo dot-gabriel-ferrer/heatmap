@@ -36,6 +36,10 @@ output/
 !examples/*.png
 !examples/*.json
 
+# Keep demo files for README
+!heatmap_animation.gif
+!heatmap_example.png
+
 # Temporary files
 tmp/
 temp/
